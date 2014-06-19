@@ -1,0 +1,139 @@
+// customize bootstrap variables here:
+@import "variables";
+@import "bootstrap";
+
+/* Set the fixed height of the footer here */
+#footer {
+    /* height: 60px; */
+}
+#footer {
+    background-color: #f5f5f5;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+h1, h2, h3, h4, h5 {
+    /* color: #1372CA; */
+}
+
+#logo{
+    width: 130px;
+    height: 130px;
+}
+
+.clear {
+    clear: both;
+}
+
+.quote p{
+font-size: 16px;
+font-weight: 300;
+line-height: 1.25;
+}
+
+.quote {
+    margin: 20px 0;
+}
+.headshot {
+    margin: 0 10px;
+}
+
+.one-day {
+    /* color: #8F959E */
+}
+
+#sublogo-header {
+    margin-top: -10px;
+}
+
+#silicon-valley-foundation-logo{
+    width: 400px;
+    height: 222px;
+}
+
+#top-apply-button {
+    margin-top: -4px;
+    margin-left: 10px;
+}
+
+#apply-now {
+    margin-top: 3px;
+}
+
+#why-pay {
+    margin-left: 10px;
+}
+
+#header{
+    padding-bottom: 10px;
+    background-image: url("../img/volunteer/10.jpg");
+    background-position: 0 -233px;
+    background-repeat: no-repeat;
+    height: 215px;
+}
+
+
+#logo-inner-container {
+    width: 1000px;
+}
+
+#logo-container{
+    margin-top: 10px;
+    overflow: visible;
+}
+
+.logo-left {
+    width: 150px;
+    float:left;
+}
+.logo-right {
+    width: 700px;
+    float:left;
+}
+
+#logo-container h1{
+    font-size: 80px;
+    margin-top: 2px;
+}
+
+#volunteer-date {
+    position: static;
+}
+
+#volunteer-date-icon {
+    cursor: pointer;
+}
+
+#logo-container h3{
+    font-size: 28px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#call-to-action button{
+    margin-left: 20px;
+}
+
+.popover{
+    font-size: 14px;
+}
+
+body, p {
+    font-size: 20px;
+}
+
+.org-description-left{
+    border-right: solid #eee 1px;
+}
+
+.baphumelele-logo{
+    height: 92px;
+}
