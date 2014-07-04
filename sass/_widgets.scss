@@ -1,0 +1,15 @@
+.btn {
+  border-radius: 20px;
+  background: $brand-blue;
+  color: white;
+  font-weight: 300;
+  font-size: 1em;
+  padding: 5px 40px;
+  text-transform: uppercase;
+  &:hover,
+  &:active,
+  &:focus {
+    background: darken($brand-blue, 10%);
+    color: white;
+  }
+}
