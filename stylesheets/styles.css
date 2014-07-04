@@ -8244,7 +8244,7 @@ body, p {
 /* line 10, ../sass/_header.scss */
 .feature-header .feature-nav {
   background: white;
-  height: 120px;
+  height: 100px;
   opacity: 1;
   position: fixed;
   width: 100%;
@@ -8253,54 +8253,99 @@ body, p {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 19, ../sass/_header.scss */
+@media (min-width: 500px) {
+  /* line 10, ../sass/_header.scss */
+  .feature-header .feature-nav {
+    height: 120px;
+  }
+}
+/* line 22, ../sass/_header.scss */
 .feature-header .feature-nav .primary-logo {
-  height: 100px;
+  height: 80px;
   margin-top: 10px;
   float: left;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 27, ../sass/_header.scss */
+@media (min-width: 500px) {
+  /* line 22, ../sass/_header.scss */
+  .feature-header .feature-nav .primary-logo {
+    height: 100px;
+  }
+}
+/* line 33, ../sass/_header.scss */
 .feature-header .feature-nav .primary-logo,
 .feature-header .feature-nav .primary-headline {
-  margin-right: 20px;
+  margin-right: 10px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 33, ../sass/_header.scss */
+@media (min-width: 500px) {
+  /* line 33, ../sass/_header.scss */
+  .feature-header .feature-nav .primary-logo,
+  .feature-header .feature-nav .primary-headline {
+    margin-right: 20px;
+  }
+}
+/* line 42, ../sass/_header.scss */
 .feature-header .feature-nav .primary-headline,
 .feature-header .feature-nav .secondary-headline {
   font-weight: 700;
-  float: left;
-  line-height: 120px;
   margin-bottom: 0;
   margin-top: 0;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 42, ../sass/_header.scss */
+@media (min-width: 992px) {
+  /* line 42, ../sass/_header.scss */
+  .feature-header .feature-nav .primary-headline,
+  .feature-header .feature-nav .secondary-headline {
+    float: left;
+  }
+}
+/* line 52, ../sass/_header.scss */
 .feature-header .feature-nav .primary-headline {
   color: #213442;
-  font-size: 3.5em;
+  font-size: 1.5em;
+  margin-top: 25px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 48, ../sass/_header.scss */
+@media (min-width: 500px) {
+  /* line 52, ../sass/_header.scss */
+  .feature-header .feature-nav .primary-headline {
+    font-size: 2em;
+  }
+}
+@media (min-width: 992px) {
+  /* line 52, ../sass/_header.scss */
+  .feature-header .feature-nav .primary-headline {
+    font-size: 3.5em;
+    line-height: 120px;
+    margin-top: 0;
+  }
+}
+/* line 67, ../sass/_header.scss */
 .feature-header .feature-nav .secondary-headline {
-  font-size: 2em;
-  line-height: 142px;
+  font-size: 1em;
   font-weight: 300;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 56, ../sass/_header.scss */
+@media (min-width: 992px) {
+  /* line 67, ../sass/_header.scss */
+  .feature-header .feature-nav .secondary-headline {
+    font-size: 2em;
+    line-height: 120px;
+  }
+}
+/* line 81, ../sass/_header.scss */
 .feature-header .feature-nav.is-collapsed {
   height: 80px;
   opacity: 0.95;
@@ -8308,14 +8353,14 @@ body, p {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 60, ../sass/_header.scss */
+/* line 85, ../sass/_header.scss */
 .feature-header .feature-nav.is-collapsed .primary-logo {
   height: 60px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 64, ../sass/_header.scss */
+/* line 89, ../sass/_header.scss */
 .feature-header .feature-nav.is-collapsed .primary-headline {
   font-size: 2em;
   line-height: 80px;
@@ -8323,14 +8368,14 @@ body, p {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 69, ../sass/_header.scss */
+/* line 94, ../sass/_header.scss */
 .feature-header .feature-nav.is-collapsed .secondary-headline {
   line-height: 80px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-/* line 74, ../sass/_header.scss */
+/* line 99, ../sass/_header.scss */
 .feature-header .feature-nav.is-collapsed .primary-logo,
 .feature-header .feature-nav.is-collapsed .primary-headline {
   margin-right: 15px;

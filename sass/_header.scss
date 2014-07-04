@@ -9,48 +9,73 @@
 
   .feature-nav {
     background: white; 
-    height: 120px;
+    height: 100px;
     opacity: 1;
     position: fixed;
     width: 100%;
     z-index: 5;
     @include transition (all 0.3s ease-in-out);
+    @media (min-width: 500px) { 
+      height: 120px;
+    }
 
     .primary-logo {
-      height: 100px;
+      height: 80px;
       margin-top: 10px;
       float: left;
       @include transition (all 0.3s ease-in-out);
+      @media (min-width: 500px) { 
+        height: 100px;
+      }
     }
 
     .primary-logo,
     .primary-headline {
-      margin-right: 20px;
+      margin-right: 10px;
       @include transition (all 0.3s ease-in-out);
+      @media (min-width: 500px) { 
+        margin-right: 20px;
+      }
     }
 
     .primary-headline,
     .secondary-headline {
       font-weight: 700;
-      float: left;
-      line-height: 120px;
       margin-bottom: 0;
       margin-top: 0;
       @include transition (all 0.3s ease-in-out);
+      @media (min-width: 992px) { 
+        float: left;
+      }
     }
 
     .primary-headline {
       color: $dark-blue;
-      font-size: 3.5em;
+      font-size: 1.5em;
+      margin-top: 25px;
       @include transition (all 0.3s ease-in-out);
+      @media (min-width: 500px) { 
+        font-size: 2em;
+      }
+      @media (min-width: 992px) { 
+        font-size: 3.5em;
+        line-height: 120px;
+        margin-top: 0;
+      }
     }
 
     .secondary-headline {
-      font-size: 2em;
-      line-height: 142px;
+      font-size: 1em;
       font-weight: 300;
       text-transform: uppercase;
       @include transition (all 0.3s ease-in-out);
+      @media (min-width: 500px) {
+      }
+      @media (min-width: 992px) { 
+        font-size: 2em;
+        line-height: 120px;
+
+      }
     }
 
     &.is-collapsed {
