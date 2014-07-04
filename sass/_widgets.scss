@@ -13,3 +13,26 @@
     color: white;
   }
 }
+
+blockquote {
+  font-style: italic;
+  font-size: 120%;
+  padding: 20px;
+  float: left;
+  max-width: 80%;
+}
+
+.blockquote-image {
+  float: left;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+p {
+  .text-hightlight {
+    font-size: 2em;
+  }
+}
