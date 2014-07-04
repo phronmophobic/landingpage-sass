@@ -1,0 +1,29 @@
+// COLORS
+// ------
+
+$dark-blue: #213442;
+$grey: #595a5a;
+$cornflower: #8f9faa;
+$orange: #dd612f;
+$brand-blue: #0e76bc;
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+  color: $brand-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($brand-blue, 10%);
+    text-decoration: underline;
+  }
+}
