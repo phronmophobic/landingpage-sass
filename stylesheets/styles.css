@@ -8058,10 +8058,12 @@ a:hover, a:focus, a:active {
   text-decoration: underline;
 }
 
-/* line 31, ../sass/_site-resets.scss */
-.container {
-  padding-left: 0;
-  padding-right: 0;
+@media (min-width: 992px) {
+  /* line 31, ../sass/_site-resets.scss */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* Set the fixed height of the footer here */
@@ -8259,7 +8261,7 @@ body, p {
     height: 120px;
   }
 }
-/* line 22, ../sass/_header.scss */
+/* line 23, ../sass/_header.scss */
 .feature-header .feature-nav .primary-logo {
   height: 80px;
   margin-top: 10px;
@@ -8269,12 +8271,12 @@ body, p {
   transition: all 0.3s ease-in-out;
 }
 @media (min-width: 500px) {
-  /* line 22, ../sass/_header.scss */
+  /* line 23, ../sass/_header.scss */
   .feature-header .feature-nav .primary-logo {
     height: 100px;
   }
 }
-/* line 33, ../sass/_header.scss */
+/* line 34, ../sass/_header.scss */
 .feature-header .feature-nav .primary-logo,
 .feature-header .feature-nav .primary-headline {
   margin-right: 10px;
@@ -8283,13 +8285,13 @@ body, p {
   transition: all 0.3s ease-in-out;
 }
 @media (min-width: 500px) {
-  /* line 33, ../sass/_header.scss */
+  /* line 34, ../sass/_header.scss */
   .feature-header .feature-nav .primary-logo,
   .feature-header .feature-nav .primary-headline {
     margin-right: 20px;
   }
 }
-/* line 42, ../sass/_header.scss */
+/* line 43, ../sass/_header.scss */
 .feature-header .feature-nav .primary-headline,
 .feature-header .feature-nav .secondary-headline {
   font-weight: 700;
@@ -8300,13 +8302,13 @@ body, p {
   transition: all 0.3s ease-in-out;
 }
 @media (min-width: 992px) {
-  /* line 42, ../sass/_header.scss */
+  /* line 43, ../sass/_header.scss */
   .feature-header .feature-nav .primary-headline,
   .feature-header .feature-nav .secondary-headline {
     float: left;
   }
 }
-/* line 52, ../sass/_header.scss */
+/* line 53, ../sass/_header.scss */
 .feature-header .feature-nav .primary-headline {
   color: #213442;
   font-size: 1.5em;
@@ -8316,20 +8318,20 @@ body, p {
   transition: all 0.3s ease-in-out;
 }
 @media (min-width: 500px) {
-  /* line 52, ../sass/_header.scss */
+  /* line 53, ../sass/_header.scss */
   .feature-header .feature-nav .primary-headline {
     font-size: 2em;
   }
 }
 @media (min-width: 992px) {
-  /* line 52, ../sass/_header.scss */
+  /* line 53, ../sass/_header.scss */
   .feature-header .feature-nav .primary-headline {
     font-size: 3.5em;
     line-height: 120px;
     margin-top: 0;
   }
 }
-/* line 67, ../sass/_header.scss */
+/* line 68, ../sass/_header.scss */
 .feature-header .feature-nav .secondary-headline {
   font-size: 1em;
   font-weight: 300;
@@ -8339,10 +8341,10 @@ body, p {
   transition: all 0.3s ease-in-out;
 }
 @media (min-width: 992px) {
-  /* line 67, ../sass/_header.scss */
+  /* line 68, ../sass/_header.scss */
   .feature-header .feature-nav .secondary-headline {
     font-size: 2em;
-    line-height: 120px;
+    line-height: 144px;
   }
 }
 /* line 81, ../sass/_header.scss */

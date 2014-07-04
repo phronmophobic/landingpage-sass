@@ -15,6 +15,7 @@
     width: 100%;
     z-index: 5;
     @include transition (all 0.3s ease-in-out);
+
     @media (min-width: 500px) { 
       height: 120px;
     }
@@ -73,8 +74,7 @@
       }
       @media (min-width: 992px) { 
         font-size: 2em;
-        line-height: 120px;
-
+        line-height: 144px;
       }
     }
 
