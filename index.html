@@ -3,9 +3,31 @@
     <title>Give a Day Global</title>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var navCollapsed = false;
+            $(window).scroll(function(event){
+                var st = $(this).scrollTop();
+                if (st > 400){
+                    if(!navCollapsed){
+                        $('.feature-nav').addClass('is-collapsed');
+                        navCollapsed = true;
+                    }
+                } else {
+                    if(navCollapsed){
+                        $('.feature-nav').removeClass('is-collapsed');
+                        navCollapsed = false;
+                    }
+                }
+            });
+
+        });
+    </script>
   </head>
   <body>
-    <section class="feature-header">
+    <header class="feature-header">
       <nav class="feature-nav">
         <div class="container">
           <img class="primary-logo" src="img/GADG_LOGO_notext_large.png">
@@ -13,8 +35,7 @@
           <h3 class="secondary-headline">South Africa</h3>
         </div>
       </nav>
-
-    </section>
+    </header>
 
 <!--     <div class="container" id="logo-container">
       <div id="logo-inner-container">
