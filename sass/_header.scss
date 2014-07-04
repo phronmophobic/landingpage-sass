@@ -1,39 +1,79 @@
 .feature-header {
   height: 100%;
   width: 100%;
-    background: url("../img/volunteer/10.jpg") no-repeat center center fixed; 
+  background: url("../img/volunteer/10.jpg") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      @include background-image(linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0), rgba(0,0,0,0.5)));
+    }
+
+    .header-abstract {
+      font-size: 2em;
+      font-weight: 300;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+      @media (min-width: 500px) { 
+        font-size: 3em;
+      }
+    }
+
+    .feature-text {
+      bottom: 50px;
+      color: white;
+      margin: auto;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      @media (min-width: 500px) { 
+        bottom: 80px;
+      }
+      @media (min-width: 992px) { 
+        //bottom: 100px;
+      }
+      .feature-more {
+        font-size: 1em;
+        font-weight: 300;
+        margin-top: 50px;
+        text-transform: uppercase;
+      }
+    }
+
+  * {
+    @include transition (all 0.3s ease-in-out);
+  }
+
   .feature-nav {
     background: white; 
-    height: 100px;
+    height: 80px;
     opacity: 1;
     position: fixed;
     width: 100%;
     z-index: 5;
-    @include transition (all 0.3s ease-in-out);
+
 
     @media (min-width: 500px) { 
       height: 120px;
     }
 
     .primary-logo {
-      height: 80px;
+      height: 60px;
       margin-top: 10px;
       float: left;
-      @include transition (all 0.3s ease-in-out);
       @media (min-width: 500px) { 
         height: 100px;
       }
     }
 
-    .primary-logo,
-    .primary-headline {
+    .primary-logo {
       margin-right: 10px;
-      @include transition (all 0.3s ease-in-out);
       @media (min-width: 500px) { 
         margin-right: 20px;
       }
@@ -41,26 +81,27 @@
 
     .primary-headline,
     .secondary-headline {
-      font-weight: 700;
       margin-bottom: 0;
       margin-top: 0;
-      @include transition (all 0.3s ease-in-out);
       @media (min-width: 992px) { 
-        float: left;
+        line-height: 120px;
       }
     }
 
     .primary-headline {
       color: $dark-blue;
       font-size: 1.5em;
-      margin-top: 25px;
-      @include transition (all 0.3s ease-in-out);
+      font-weight: 700;
+      margin-top: 15px;
+      margin-right: 0;
+      width: auto;
       @media (min-width: 500px) { 
         font-size: 2em;
+        margin-top: 20px;
       }
       @media (min-width: 992px) { 
         font-size: 3.5em;
-        line-height: 120px;
+        float: left;
         margin-top: 0;
       }
     }
@@ -69,36 +110,54 @@
       font-size: 1em;
       font-weight: 300;
       text-transform: uppercase;
-      @include transition (all 0.3s ease-in-out);
-      @media (min-width: 500px) {
+      @media (min-width: 500px) { 
+        font-size: 1.5em;
       }
       @media (min-width: 992px) { 
+        float: right;
         font-size: 2em;
-        line-height: 144px;
       }
     }
 
     &.is-collapsed {
-      height: 80px;
       opacity: 0.95;
-      @include transition(all 0.3s ease-in-out);
+      @media (min-width: 500px) { 
+        height: 80px;
+      }
       .primary-logo {
-        height: 60px;
-        @include transition(all 0.3s ease-in-out);
+        @media (min-width: 500px) { 
+          height: 60px;
+        }
       }
       .primary-headline {
-        font-size: 2em;
-        line-height: 80px;
-        @include transition(all 0.3s ease-in-out);
+        @media (min-width: 500px) { 
+          font-size: 1.5em;
+          margin-top: 15px;
+        }
+        @media (min-width: 992px) { 
+          font-size: 2em;
+          margin-top: 0;
+        }
       }
       .secondary-headline {
-        line-height: 80px;
-        @include transition(all 0.3s ease-in-out);
+        @media (min-width: 500px) { 
+          font-size: 1em;
+        }
+        @media (min-width: 992px) {
+          font-size: 2em;
+          margin-top: 0;
+        }
       }
-      .primary-logo,
-      .primary-headline {
-        margin-right: 15px;
-        @include transition(all 0.3s ease-in-out);
+      .primary-headline,
+      .secondary-headline {
+        @media (min-width: 992px) { 
+          line-height: 80px;
+        }
+      }
+      .primary-logo {
+        @media (min-width: 500px) {
+          margin-right: 10px;
+        }
       }
     }
   }
