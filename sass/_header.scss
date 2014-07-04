@@ -1,0 +1,51 @@
+.feature-header {
+  height: 100%;
+  width: 100%;
+    background: url("../img/volunteer/10.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  .feature-nav {
+    background: white; 
+    height: 120px;
+    opacity: 0.96;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .primary-logo {
+    height: 100px;
+    margin-top: 10px;
+    float: left;
+  }
+
+  .primary-logo,
+  .primary-headline {
+    margin-right: 20px;
+  }
+
+  .primary-headline,
+  .secondary-headline {
+    font-weight: 700;
+    float: left;
+    line-height: 120px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .primary-headline {
+    color: $dark-blue;
+    font-size: 3.5em;
+  }
+
+  .secondary-headline {
+    color: $dark-blue;
+    font-size: 1.75em;
+    line-height: 146px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
