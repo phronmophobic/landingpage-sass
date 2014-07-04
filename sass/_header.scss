@@ -10,42 +10,71 @@
   .feature-nav {
     background: white; 
     height: 120px;
-    opacity: 0.96;
+    opacity: 1;
     position: fixed;
     width: 100%;
     z-index: 5;
-  }
+    @include transition (all 0.3s ease-in-out);
 
-  .primary-logo {
-    height: 100px;
-    margin-top: 10px;
-    float: left;
-  }
+    .primary-logo {
+      height: 100px;
+      margin-top: 10px;
+      float: left;
+      @include transition (all 0.3s ease-in-out);
+    }
 
-  .primary-logo,
-  .primary-headline {
-    margin-right: 20px;
-  }
+    .primary-logo,
+    .primary-headline {
+      margin-right: 20px;
+      @include transition (all 0.3s ease-in-out);
+    }
 
-  .primary-headline,
-  .secondary-headline {
-    font-weight: 700;
-    float: left;
-    line-height: 120px;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
+    .primary-headline,
+    .secondary-headline {
+      font-weight: 700;
+      float: left;
+      line-height: 120px;
+      margin-bottom: 0;
+      margin-top: 0;
+      @include transition (all 0.3s ease-in-out);
+    }
 
-  .primary-headline {
-    color: $dark-blue;
-    font-size: 3.5em;
-  }
+    .primary-headline {
+      color: $dark-blue;
+      font-size: 3.5em;
+      @include transition (all 0.3s ease-in-out);
+    }
 
-  .secondary-headline {
-    color: $dark-blue;
-    font-size: 1.75em;
-    line-height: 146px;
-    font-weight: 300;
-    text-transform: uppercase;
+    .secondary-headline {
+      font-size: 2em;
+      line-height: 142px;
+      font-weight: 300;
+      text-transform: uppercase;
+      @include transition (all 0.3s ease-in-out);
+    }
+
+    &.is-collapsed {
+      height: 80px;
+      opacity: 0.95;
+      @include transition(all 0.3s ease-in-out);
+      .primary-logo {
+        height: 60px;
+        @include transition(all 0.3s ease-in-out);
+      }
+      .primary-headline {
+        font-size: 2em;
+        line-height: 80px;
+        @include transition(all 0.3s ease-in-out);
+      }
+      .secondary-headline {
+        line-height: 80px;
+        @include transition(all 0.3s ease-in-out);
+      }
+      .primary-logo,
+      .primary-headline {
+        margin-right: 15px;
+        @include transition(all 0.3s ease-in-out);
+      }
+    }
   }
 }
