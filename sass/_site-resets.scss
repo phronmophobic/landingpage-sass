@@ -49,6 +49,14 @@ a {
   text-transform: uppercase;
 }
 
+.img-headline {
+  font-size: 3em;
+  font-weight: 700;
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+}
+
 @mixin background-size() {
   -webkit-background-size: cover;
   -moz-background-size: cover;
