@@ -92,3 +92,24 @@
 .charity-logo {
   margin: 20px 0;
 }
+
+.twitter {
+  background: url("../img/icons/twitter.png") no-repeat 0 -2%;
+
+}
+
+.facebook {
+  background: url("../img/icons/facebook.png") no-repeat 0 -2%; 
+}
+
+a.social-icon {
+  display: block;
+  color: transparent;
+  width: 30px;
+  height: 30px;
+  &:hover,
+  &:focus,
+  &:active {
+    background-position: 0 100%;
+  } 
+}
