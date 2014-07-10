@@ -8476,48 +8476,54 @@ p .text-hightlight {
     padding: 150px 0;
   }
 }
+@media (min-width: 992px) {
+  /* line 40, ../sass/_sections.scss */
+  .main-content .container.container-small {
+    padding: 0 0 150px 0;
+  }
+}
 
-/* line 43, ../sass/_sections.scss */
+/* line 48, ../sass/_sections.scss */
 .text-highlight {
   font-size: 1.5em;
   text-align: center;
 }
 @media (min-width: 992px) {
-  /* line 43, ../sass/_sections.scss */
+  /* line 48, ../sass/_sections.scss */
   .text-highlight {
     font-size: 2em;
   }
 }
 
-/* line 51, ../sass/_sections.scss */
+/* line 56, ../sass/_sections.scss */
 .section-highlight-head {
   font-family: 'Source Serif Pro', serif;
   font-size: 1.5em;
   font-weight: 700;
 }
 @media (min-width: 992px) {
-  /* line 51, ../sass/_sections.scss */
+  /* line 56, ../sass/_sections.scss */
   .section-highlight-head {
     margin-top: 0;
   }
 }
 @media (min-width: 992px) {
-  /* line 51, ../sass/_sections.scss */
+  /* line 56, ../sass/_sections.scss */
   .section-highlight-head {
     font-size: 2em;
   }
 }
 
-/* line 64, ../sass/_sections.scss */
+/* line 69, ../sass/_sections.scss */
 .col-img {
   margin: 0 auto;
 }
 
-/* line 68, ../sass/_sections.scss */
+/* line 73, ../sass/_sections.scss */
 .globe-container {
   position: relative;
 }
-/* line 70, ../sass/_sections.scss */
+/* line 75, ../sass/_sections.scss */
 .globe-container .globe-icon {
   background: url("../img/icons/map.png") no-repeat 0 0;
   height: 291px;
@@ -8529,13 +8535,13 @@ p .text-hightlight {
   opacity: 0.5;
   z-index: 1;
 }
-/* line 81, ../sass/_sections.scss */
+/* line 86, ../sass/_sections.scss */
 .globe-container .text-highlight {
   position: relative;
   z-index: 4;
 }
 
-/* line 87, ../sass/_sections.scss */
+/* line 92, ../sass/_sections.scss */
 .charity-logo {
   margin: 20px 0;
 }

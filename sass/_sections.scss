@@ -37,6 +37,11 @@
         padding: 150px 0;
       }
     }
+    &.container-small {
+      @media (min-width: 992px) {
+        padding: 0 0 150px 0;
+      }
+    }
   }
 }
 
