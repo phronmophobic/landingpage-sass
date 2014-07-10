@@ -1,4 +1,4 @@
-// COLORS
+ // COLORS
 // ------
 
 $dark-blue: #213442;
@@ -16,6 +16,9 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2em;
   color: $dark-blue;
+  h1 {
+    font-family: 'Source Serif Pro', serif;
+  }
 }
 
 a {
@@ -38,4 +41,17 @@ a {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.secondary-headline {
+  font-size: 2em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@mixin background-size() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

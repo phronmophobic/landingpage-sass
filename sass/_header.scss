@@ -2,10 +2,7 @@
   height: 100%;
   width: 100%;
   background: url("../img/volunteer/10.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  @include background-size();
 
     &::after {
       display: block;
@@ -28,16 +25,14 @@
     }
 
     .feature-text {
-      bottom: 20px;
+      bottom: 50px;
       color: white;
       position: absolute;
       width: 100%;
       @media (min-width: 500px) { 
-        //bottom: 80px;
         width: 80%;
       }
       @media (min-width: 992px) { 
-        bottom: 50px;
         width: 55%;
       }
       @media (min-width: 1500px) { 
@@ -45,57 +40,14 @@
       }
 
       .feature-more {
-        background: url("../img/icons/down-arrow.png") no-repeat 40px 40px;
+        background: url("../img/icons/down-arrow.png") no-repeat 35px 35px;
         background-size: 20px 12px;
+        color: white;
         padding-bottom: 30px;
         font-size: 1em;
         font-weight: 300;
         margin-top: 50px;
-        text-transform: uppercase;
-      }
-    }
-
-    .feature-form-container {
-      width: 90%;
-      height: 100%;
-      @media (min-width: 992px) { 
-        width: 80%;
-      }
-
-      .input-group {
-        width: 95%;
-        @media (min-width: 788px) { 
-          width: 60%;
-        }
-        @media (min-width: 992px) { 
-          //min-width: 80%;
-        }
-      }
-
-      .input-group-addon {
-        background: $cornflower url("../img/icons/at.png") no-repeat 10px 10px;
-        background-size: 20px 20px;
-        border: none;
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 0px;
-        color: transparent;
-        width: 40px;
-      }
-      .form-control {
-        border-radius: 0px;
-        border: none;
-        height: 40px;
-        width: 100%;
-        @media (min-width: 788px) { 
-          min-width: 90%;
-        }
-      }
-      .btn-feature {
-        margin-top: 10px;
-        @media (min-width: 788px) { 
-          margin-top: 0;
-          margin-left: -4px; // FIX INLINE BLOCK BUG
-        }
+        text-decoration: none;
       }
     }
 

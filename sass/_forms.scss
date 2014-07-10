@@ -1,0 +1,47 @@
+    .feature-form-container {
+      width: 90%;
+      //height: 100%;
+      @media (min-width: 992px) { 
+        width: 80%;
+      }
+
+      .input-group {
+        width: 95%;
+        @media (min-width: 788px) { 
+          width: 60%;
+        }
+        @media (min-width: 992px) { 
+          //min-width: 80%;
+        }
+      }
+
+      .input-group-addon {
+        background: $cornflower url("../img/icons/at.png") no-repeat 10px 10px;
+        background-size: 20px 20px;
+        border: none;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        color: transparent;
+        width: 40px;
+      }
+      .form-control {
+        border-radius: 0px;
+        border: none;
+        height: 40px;
+        width: 100%;
+        @media (min-width: 788px) { 
+          min-width: 90%;
+        }
+      }
+      .btn-feature {
+        margin-top: 10px;
+        @media (min-width: 788px) { 
+          margin-top: 0;
+          margin-left: -4px; // FIX INLINE BLOCK BUG
+        }
+      }
+    }
+
+    .form-inline .input-group .input-group-addon {
+      width: 40px;
+    }
