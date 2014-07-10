@@ -8545,3 +8545,25 @@ p .text-hightlight {
 .charity-logo {
   margin: 20px 0;
 }
+
+/* line 96, ../sass/_sections.scss */
+.twitter {
+  background: url("../img/icons/twitter.png") no-repeat 0 -2%;
+}
+
+/* line 101, ../sass/_sections.scss */
+.facebook {
+  background: url("../img/icons/facebook.png") no-repeat 0 -2%;
+}
+
+/* line 105, ../sass/_sections.scss */
+a.social-icon {
+  display: block;
+  color: transparent;
+  width: 30px;
+  height: 30px;
+}
+/* line 112, ../sass/_sections.scss */
+a.social-icon:hover, a.social-icon:focus, a.social-icon:active {
+  background-position: 0 100%;
+}
