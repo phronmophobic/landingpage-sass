@@ -16,19 +16,36 @@
 
 blockquote {
   font-style: italic;
-  font-size: 120%;
+  font-size: 90%;
   padding: 20px;
   float: left;
-  max-width: 80%;
+  border-left: none;
+  background: $cornflower;
+  color: white;
 }
 
 .blockquote-image {
-  float: left;
   border-radius: 50%;
   margin-right: 15px;
   margin-bottom: 30px;
   margin-top: 50px;
-  display: inline-block;
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  right: 20px;
+}
+
+.blockquote-container {
+  position: relative;
+}
+
+.quote-icon {
+  background: url("../img/icons/quotes.png") no-repeat 0 0;
+  width: 20px;
+  height: 18px;
+  display: block;
+  float: left;
+  margin-right: 10px;
 }
 
 p {
