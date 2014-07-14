@@ -22,6 +22,8 @@ blockquote {
   border-left: none;
   background: $cornflower;
   color: white;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .blockquote-image {
@@ -31,12 +33,8 @@ blockquote {
   margin-top: 50px;
   display: block;
   position: absolute;
-  bottom: -40px;
+  bottom: -60px;
   right: 20px;
-}
-
-.blockquote-container {
-  position: relative;
 }
 
 .quote-icon {
@@ -45,7 +43,7 @@ blockquote {
   height: 18px;
   display: block;
   float: left;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 p {

@@ -14,7 +14,7 @@
 }
 
 .section-lowlight {
-  background: $dark-blue;
+  background: $cornflower;
   color: white;
   a {
     color: white;
@@ -53,10 +53,10 @@
   }
 }
 
-.section-highlight-head {
-  font-family: 'Source Serif Pro', serif;
+.section-highlight-head, .volunteer-head  {
   font-size: 1.5em;
   font-weight: 700;
+  margin-bottom: 20px;
   @media (min-width: 992px) { 
     margin-top: 0;
   }
@@ -64,6 +64,10 @@
   @media (min-width: 992px) { 
     font-size: 2em;
   }
+}
+
+.section-highlight-head {
+  font-family: 'Source Serif Pro', serif;
 }
 
 .col-img {
@@ -108,7 +112,6 @@
 a.social-icon {
   display: block;
   float: right;
-  margin-left: 10px;
   color: transparent;
   width: 30px;
   &:hover,
@@ -122,8 +125,4 @@ a.social-icon {
   float: left;
   color: $cornflower;
   line-height: 78px;
-}
-
-blockquote {
-  border-left: 5px solid $cornflower;
 }
