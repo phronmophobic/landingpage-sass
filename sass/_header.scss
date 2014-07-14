@@ -28,17 +28,6 @@
       bottom: 50px;
       color: white;
       position: absolute;
-      width: 100%;
-      @media (min-width: 500px) { 
-        width: 80%;
-      }
-      @media (min-width: 992px) { 
-        width: 55%;
-      }
-      @media (min-width: 1500px) { 
-        width: 40%;
-      }
-
       .feature-more {
         background: url("../img/icons/down-arrow.png") no-repeat 35px 35px;
         background-size: 20px 12px;
