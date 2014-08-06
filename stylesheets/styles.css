@@ -8134,6 +8134,7 @@ blockquote {
   position: absolute;
   bottom: -60px;
   right: 20px;
+<<<<<<< HEAD
 }
 
 /* line 40, ../sass/_widgets.scss */
@@ -8146,6 +8147,20 @@ blockquote {
   margin-right: 8px;
 }
 
+=======
+}
+
+/* line 40, ../sass/_widgets.scss */
+.quote-icon {
+  background: url("../img/icons/quotes.png") no-repeat 0 0;
+  width: 20px;
+  height: 18px;
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+
+>>>>>>> master
 /* line 50, ../sass/_widgets.scss */
 p .text-hightlight {
   font-size: 2em;
