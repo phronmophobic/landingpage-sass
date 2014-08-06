@@ -1,7 +1,7 @@
 .feature-header {
   height: 100%;
   width: 100%;
-  background: url("../img/volunteer/10.jpg") no-repeat center center fixed;
+  background: url("../img/volunteer/10.jpg") no-repeat center center;
   @include background-size();
 
     &::after {
