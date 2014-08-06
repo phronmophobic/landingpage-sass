@@ -26,9 +26,12 @@
     }
 
     .feature-text {
-      bottom: 50px;
+      bottom: 10px;
       color: white;
       position: absolute;
+      @media (min-width: 992px) {
+        bottom: 50px;
+      }
       .feature-more {
         background: url("../img/icons/down-arrow.png") no-repeat 35px 35px;
         background-size: 20px 12px;
@@ -36,8 +39,9 @@
         padding-bottom: 30px;
         font-size: 1em;
         font-weight: 300;
-        margin-top: 50px;
+        margin-top: 25px;
         text-decoration: none;
+        display: block;
       }
     }
 
