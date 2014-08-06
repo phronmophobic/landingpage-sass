@@ -1,7 +1,7 @@
 .feature-header {
   height: 100%;
   width: 100%;
-  background: url("../img/volunteer/10.jpg") no-repeat center center fixed; 
+  background: url("../img/volunteer/10.jpg") no-repeat center center fixed;
   @include background-size();
 
     &::after {
@@ -13,11 +13,12 @@
     }
 
     .header-abstract {
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 700;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       @media (min-width: 700px) { 
         font-size: 3em;
+        margin-bottom: 50px;
       }
       @media (min-width: 992px) { 
         font-size: 3em;
@@ -84,7 +85,7 @@
 
     .primary-headline {
       color: $brand-blue;
-      font-size: 1.5em;
+      font-size: 1.3em;
       font-weight: 700;
       margin-top: 15px;
       margin-right: 0;

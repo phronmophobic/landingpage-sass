@@ -22,9 +22,16 @@
   }
 }
 
+@media (min-width: 500px) { 
+  .section-center {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
 .main-content {
   .container {
-    padding: 40px;
+    padding: 20px 0;
 
     @media (min-width: 500px) {
       padding: 80px 0;
@@ -125,4 +132,9 @@ a.social-icon {
   float: left;
   color: $cornflower;
   line-height: 78px;
+}
+
+.footer, .main-content, .feature-header  { // This gives space for sticky nav
+  position: relative;                      // and prevents collapsing on mobile
+  top: 80px;
 }
