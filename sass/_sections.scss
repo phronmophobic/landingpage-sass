@@ -22,9 +22,16 @@
   }
 }
 
+@media (min-width: 500px) { 
+  .section-center {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
 .main-content {
   .container {
-    padding: 40px;
+    padding: 20px 0;
 
     @media (min-width: 500px) {
       padding: 80px 0;

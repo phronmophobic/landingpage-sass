@@ -34,7 +34,10 @@ blockquote {
   display: block;
   position: absolute;
   bottom: -60px;
-  right: 20px;
+  right: -20px;
+  @media (min-width: 500px) { 
+     right: 0;
+  }
 }
 
 .quote-icon {

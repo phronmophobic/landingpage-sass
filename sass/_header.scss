@@ -1,7 +1,7 @@
 .feature-header {
   height: 100%;
   width: 100%;
-  background: url("../img/volunteer/10.jpg") no-repeat center center fixed; 
+  background: url("../img/volunteer/10.jpg") no-repeat center center;
   @include background-size();
 
     &::after {
@@ -13,11 +13,12 @@
     }
 
     .header-abstract {
-      font-size: 2em;
+      font-size: 1.5em;
       font-weight: 700;
-      margin-bottom: 50px;
+      margin-bottom: 20px;
       @media (min-width: 700px) { 
         font-size: 3em;
+        margin-bottom: 50px;
       }
       @media (min-width: 992px) { 
         font-size: 3em;
@@ -25,9 +26,12 @@
     }
 
     .feature-text {
-      bottom: 50px;
+      bottom: 10px;
       color: white;
       position: absolute;
+      @media (min-width: 992px) {
+        bottom: 50px;
+      }
       .feature-more {
         background: url("../img/icons/down-arrow.png") no-repeat 35px 35px;
         background-size: 20px 12px;
@@ -35,8 +39,9 @@
         padding-bottom: 30px;
         font-size: 1em;
         font-weight: 300;
-        margin-top: 50px;
+        margin-top: 25px;
         text-decoration: none;
+        display: block;
       }
     }
 
@@ -83,8 +88,8 @@
     }
 
     .primary-headline {
-      color: $dark-blue;
-      font-size: 1.5em;
+      color: $cornflower;
+      font-size: 1.3em;
       font-weight: 700;
       margin-top: 15px;
       margin-right: 0;
