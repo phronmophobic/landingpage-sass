@@ -8240,7 +8240,7 @@ p .text-hightlight {
 .feature-header {
   height: 100%;
   width: 100%;
-  background: url("../img/volunteer/10.jpg") no-repeat center center;
+  background: url("../img/highres-10.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8469,7 +8469,7 @@ p .text-hightlight {
 
 /* line 6, ../sass/_sections.scss */
 .section-highlight-1 {
-  background: url("../img/children-classroom.jpg") no-repeat 50% 50%;
+  background: url("../img/highres-7.jpg") no-repeat 50% 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8478,7 +8478,7 @@ p .text-hightlight {
 
 /* line 11, ../sass/_sections.scss */
 .section-highlight-2 {
-  background: url("../img/Baphumelele-play.jpg") no-repeat 80% 30%;
+  background: url("../img/highres-5.jpg") no-repeat 80% 30%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
