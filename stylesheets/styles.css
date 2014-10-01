@@ -8228,7 +8228,7 @@ p .text-hightlight {
 .feature-header {
   height: 100%;
   width: 100%;
-  background: url("../img/volunteer/10.jpg") no-repeat center center fixed;
+  background: url("../img/GoldenGateBridge-001.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8602,4 +8602,9 @@ a.social-icon:hover, a.social-icon:focus, a.social-icon:active {
   float: left;
   color: #8f9faa;
   line-height: 78px;
+}
+
+/* line 131, ../sass/_sections.scss */
+ul.volunteer-activities li {
+  font-size: 1.5em;
 }
